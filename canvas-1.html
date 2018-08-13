@@ -6,12 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Poster 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Biryani:400,800" rel="stylesheet">
 </head>
 
 <style>
     * {
         margin: 0;
         padding: 0;
+    }
+    
+    body {
+        font-family: 'Biryani', sans-serif;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    h2 {
+        font-weight: 800;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    
+    .p1 {
+        font-size: 1.5rem;
+        line-height: 1em;
+    }
+    
+    .p2 {
+        font-size: .8rem;
     }
     
     .content {
@@ -23,8 +48,10 @@
         grid-auto-columns: 70px;
         grid-auto-rows: 55px;
         grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(14, 1fr);
         margin: auto;
         width: 70vw;
+        height: 100vh;
     }
     
     .box-1,
@@ -37,32 +64,31 @@
     
     .box-1 {
         grid-column: 1 / 2;
-        grid-row: 9 / span 5;
-        /* background-color: #000; */
+        grid-row: 8 / span 6;
     }
     
     .box-2 {
         grid-column: 2 / span 3;
-        grid-row: 7;
+        grid-row: 5;
     }
     
     .box-3 {
-        grid-column: 6 / 7;
-        grid-row: 8 / span 3;
+        grid-column: 7;
+        grid-row: 6 / span 2;
     }
     
     .box-4 {
-        grid-column: 5 / span 5;
+        grid-column: 6 / span 6;
         grid-row: 14;
     }
     
     .box-5 {
         grid-column: 12;
-        grid-row: 1 / span 10;
+        grid-row: 1 / span 7;
     }
     
     .box-6 {
-        grid-column: 3 / span 5;
+        grid-column: 3 / span 6;
         grid-row: 10;
     }
 </style>
@@ -76,10 +102,10 @@
             <div class="box box-4">4</div>
             <div class="box box-5">5</div>
             <div class="box box-6">
-                <h1>Titulo</h1>
-                <h2>subtitulo</h2>
-                <p>Paragrafo1</p>
-                <p>Paragrafo2</p>
+                <h1>Helmhaus Zurich</h1>
+                <h2>Aus der Sammlung des Kunsthauses Zurich</h2>
+                <p class="p1">Neuere Schweizer Kunst <br>18.Aug.-13.Sept. 1953</p>
+                <p class="p2">taglich geoffnet 10-12 und 14-18 Uhr <br> Samstag und Sonntag bis 17 Uhr, Mittwoch auch 20-22 Uhr<br> Montag geschlossen</p>
             </div>
             <!--END box-grid  -->
         </div>
